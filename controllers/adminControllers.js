@@ -4,7 +4,7 @@ const { comparePassword, hashPassword } =require("./../helpers/authHelper.js");
 const placementModel =require("../models/placementModel.js");
 const profileModel =require("../models/profileModel.js");
 const allPlacementModel =require("../models/allPlacementModel.js");
-const { transporter } =require("../server.cjs");
+const { transporter } =require("../server.js");
 const sendMailNotification = async (req, res) => {
   var mailOptions = {
     from: process.env.MAIL_USERNAME,
